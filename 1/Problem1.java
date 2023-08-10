@@ -79,6 +79,7 @@ class Problem1 {
         result = obj.ceaserEncrypt(text, shift_for_ceaser);
         writeFile("./Chipertext.txt", result);
         result = transposeCipher(result, width);
+        writeFile("./Transposition.txt", result);
         result = transposeDecrypt(result, width);
         result = obj.ceaserDecrypt(result, shift_for_ceaser);
         writeFile("./RecoverFile.txt", result);
